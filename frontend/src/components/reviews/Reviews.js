@@ -10,6 +10,7 @@ import React from 'react'
 const Reviews = ({ getMovieData, movie, reviewIds, setReviewIds }) => {
 
     const revText = useRef(null);
+
     const params = useParams();
     const movieId = params.movieId;
 
@@ -31,16 +32,16 @@ const Reviews = ({ getMovieData, movie, reviewIds, setReviewIds }) => {
 
             // console.log(response.data);
             const updatedReviewIds = [...reviewIds, response.data];
-    
+
             rev.value = "";
-    
+
             // console.log(await response.data);
             setReviewIds(updatedReviewIds);
 
         } catch (error) {
 
             console.error(error);
-            
+
         }
     }
 
@@ -50,7 +51,7 @@ const Reviews = ({ getMovieData, movie, reviewIds, setReviewIds }) => {
                 <Col><h3>Reviews</h3></Col>
             </Row>
             <Row className="mt-2">
-                <Col><img src={movie?.poster} alt="" style={{height: "70vh"}}/></Col>
+                <Col><img src={movie?.poster} alt="" style={{ height: "70vh" }} /></Col>
                 <Col>
                     {
                         <>

@@ -8,7 +8,7 @@ import Navigation from './components/navigation/Navigation';
 import Trailer from './components/trailer/Trailer';
 import Reviews from './components/reviews/Reviews';
 
-function App() {
+const App = () => {
 
   const [movies, setMovies] = useState([]); // movies is an array of JS objects
   const [movie, setMovie] = useState(null); // movie is a JS object

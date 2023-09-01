@@ -6,10 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
-
 @RestController
 @RequestMapping("/api/v1/reviews")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 @SuppressWarnings("unused")
 public class ReviewController {
     @Autowired
