@@ -1,5 +1,8 @@
-package com.example.movies;
+package com.example.movies.Service;
 
+import com.example.movies.Models.Movie;
+import com.example.movies.Models.Review;
+import com.example.movies.Repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
