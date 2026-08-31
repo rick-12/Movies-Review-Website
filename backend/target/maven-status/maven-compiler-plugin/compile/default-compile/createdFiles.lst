@@ -1,0 +1,10 @@
+com\example\movies\Service\ReviewService.class
+com\example\movies\MoviesApplication$1.class
+com\example\movies\Controllers\MovieController.class
+com\example\movies\Models\Review.class
+com\example\movies\Models\Movie.class
+com\example\movies\MoviesApplication.class
+com\example\movies\Service\MovieService.class
+com\example\movies\Controllers\ReviewController.class
+com\example\movies\Repository\MovieRepository.class
+com\example\movies\Repository\ReviewRepository.class
