@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 @Service
-@SuppressWarnings("unused")
 public class ReviewService {
 
     @Autowired

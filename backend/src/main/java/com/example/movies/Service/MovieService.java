@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@SuppressWarnings("unused")
 public class MovieService {
     @Autowired
     private MovieRepository movieRepository;

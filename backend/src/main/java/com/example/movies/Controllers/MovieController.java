@@ -13,7 +13,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/v1/movies")
 @CrossOrigin(origins = "http://localhost:3000")
-@SuppressWarnings("unused")
 public class MovieController {
 
     @Autowired
@@ -22,9 +21,6 @@ public class MovieController {
     public ResponseEntity<List<Movie>> getAllMovies() {
         return new ResponseEntity<>(movieService.allMovies(), HttpStatus.OK);
     }
-//    public ResponseEntity<String> getAllMovies() {
-//        return new ResponseEntity<>("Hello, World!!", HttpStatus.OK);
-//    }
 
     @GetMapping("/{imdbId}")
     public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId) {
